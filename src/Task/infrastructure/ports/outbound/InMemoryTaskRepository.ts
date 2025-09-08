@@ -8,4 +8,8 @@ export class InMemoryTaskRepository implements TaskRepository {
     this.tasks.push(task);
     return task;
   }
+
+  async getAll(): Promise<Task[]> {
+    return this.tasks;
+  }
 }

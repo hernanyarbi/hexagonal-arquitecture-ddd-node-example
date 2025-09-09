@@ -6,5 +6,9 @@ export class Task {
         public completed: boolean = false
     ) {}
 
+    complete() {
+        this.completed = true;
+    }
+
 
 }
